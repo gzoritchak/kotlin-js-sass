@@ -6,3 +6,5 @@ which uses SASS and hot reload.
 Launch gradle in continuous mode `gradlew browserDevelopmentRun -t`
 
 You can then modify your Kotlin and SASS files and the see the result immediately.
+
+![Hot reload of SASS files in Kotlin/JS](./sass-demo.gif)
