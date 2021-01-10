@@ -9,6 +9,10 @@ repositories {
 
 dependencies {
     implementation(npm(projectDir.resolve("src/main/resources/css")))
+    implementation(devNpm("node-sass", "^4.12.0"))
+    implementation(devNpm("sass-loader", "^7.1.0"))
+    implementation(devNpm("css-loader", "^4.2.0"))
+    implementation(devNpm("style-loader","^1.2.0"))
 }
 
 kotlin {
@@ -22,10 +26,6 @@ kotlin {
                     useChromeHeadless()
                 }
             }
-        }
-        compilations["main"].packageJson {
-            devDependencies["node-sass"] = "^4.12.0"
-            devDependencies["sass-loader"] = "^7.1.0"
         }
         binaries.executable()
     }
