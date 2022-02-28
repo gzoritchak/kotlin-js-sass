@@ -1,5 +1,5 @@
 plugins {
-    kotlin("js").version("1.4.21")
+    kotlin("js") version "1.6.10"
 }
 
 
@@ -9,10 +9,8 @@ repositories {
 
 dependencies {
     implementation(npm(projectDir.resolve("src/main/resources/css")))
-    implementation(devNpm("node-sass", "^4.12.0"))
-    implementation(devNpm("sass-loader", "^7.1.0"))
-    implementation(devNpm("css-loader", "^4.2.0"))
-    implementation(devNpm("style-loader","^1.2.0"))
+    implementation(devNpm("sass", "^1.49.9"))
+    implementation(devNpm("sass-loader", "^12.6.0"))
 }
 
 kotlin {
